@@ -1,0 +1,23 @@
+{
+  "name": "react-c9book-backend",
+  "version": "1.0.0",
+  "description": "c9book - Your notebook on the cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c9hariom/react-c9book-backend.git"
+  },
+  "author": "c9hariom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c9hariom/react-c9book-backend/issues"
+  },
+  "homepage": "https://github.com/c9hariom/react-c9book-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
+  }
+}
