@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const NotesSchema = new mongoose.Schema({
+    user:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:'user'
+    },
     title:{
         type: String,
         required: true
@@ -15,10 +19,9 @@ const NotesSchema = new mongoose.Schema({
     },
     date:{
         type: Date,
-        required: Date.now
+        default: Date.now
     }
 })
 
 const notes = mongoose.model('notes',NotesSchema);
-notes.createIndexes();
 module.exports = notes;
